@@ -40,8 +40,8 @@ Flume-ng>=1.7(该监控组件仅在flume-ng1.7 测试过)
     # 可选项：tag，用于区分不同的flume-ng组件。根据需求修改
     #-Dflume.monitoring.tags=app=flowfilter
     
-    # 可选项：上报时间间隔， 上报给open-falcon的上报间隔，默认值60，单位秒。不建议修改
-    #-Dflume.monitoring.pollFrequency=60
+    # 可选项：上报时间间隔， 上报给open-falcon的上报间隔，默认值60，单位秒。不建议修改   
+    #-Dflume.monitoring.pollFrequency=60  
 
 
 
