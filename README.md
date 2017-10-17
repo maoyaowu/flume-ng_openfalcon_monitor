@@ -33,18 +33,16 @@ Flume-ng>=1.7(该监控组件仅在flume-ng1.7 测试过)
             
     # 上报数据到open-falcon的agent接口地址url：如果使用open-falcon的默认配置，则这里不需要改变，除了本地agent上报数据接口的url地址做为主用外，还可以另加一个备用的地址。
     #-Dflume.monitoring.urls=http://localhost:1988/v1/push,http://10.254.253.210:1988/v1/push
-    
-    
+        
     # 可选项：主机名称：上报给open-falcon的endpoint，默认值为本机hostname。根据需求修改
     #-Dflume.monitoring.hostname=myflume
-    
     
     # 可选项：tag，用于区分不同的flume-ng组件
     #-Dflume.monitoring.tags=app=flowfilter
     
+    # 可选项：上报时间间隔，  上报给open-falcon的上报间隔，默认值60，单位秒。不建议修改
+    #-Dflume.monitoring.pollFrequency=60
     
-    # 可选项：上报时间间隔，  上报给open-falcon的上报间隔，默认值60，单位秒。不建议修改
-    #-Dflume.monitoring.pollFrequency=60
 
 
 
