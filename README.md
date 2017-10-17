@@ -40,27 +40,13 @@ Flume-ng>=1.7(该监控组件仅在flume-ng1.7 测试过)
     # 可选项：tag，用于区分不同的flume-ng组件
     #-Dflume.monitoring.tags=app=flowfilter
     
-    # 可选项：上报时间间隔，  上报给open-falcon的上报间隔，默认值60，单位秒。不建议修改
-    #-Dflume.monitoring.pollFrequency=60
+    # 可选项：上报时间间隔， 上报给open-falcon的上报间隔，默认值60，单位秒。不建议修改
+    #-Dflume.monitoring.pollFrequency=60
     
 
 
 
 ## 采集指标
-|  Counters |  Type |  Notes| 
-| -----| ------| ------| 
-|  parnew.gc.avg.time  |  GAUGE  |  一分钟内，每次YoungGC(parnew)的平均耗时  | 
-|  concurrentmarksweep.gc.avg.time  |  GAUGE  |  一分钟内，每次CMSGC的平均耗时  | 
-|  parnew.gc.count  |  GAUGE  |  一分钟内，YoungGC(parnew)的总次数  | 
-|  concurrentmarksweep.gc.count  |  GAUGE  |  一分钟内，CMSGC的总次数  | 
-|  gc.throughput  |  GAUGE  |  GC的总吞吐率（应用运行时间/进程总运行时间）  | 
-|  new.gen.promotion  |  GAUGE  |  一分钟内，新生代的内存晋升总大小  | 
-|  new.gen.avg.promotion  |  GAUGE  |  一分钟内，平均每次YoungGC的新生代内存晋升大小  | 
-|  old.gen.mem.used  |  GAUGE  |  老年代的内存使用量  | 
-|  old.gen.mem.ratio  |  GAUGE  |  老年代的内存使用率  | 
-|  thread.active.count  |  GAUGE  |  当前活跃线程数  | 
-|  thread.peak.count  |  GAUGE  |  峰值线程数  | 
-
 
 |  Counters |  Type |  Notes| 
 | -----| ------| ------| 
@@ -89,7 +75,7 @@ Flume-ng>=1.7(该监控组件仅在flume-ng1.7 测试过)
 | SINK.k1.EventDrainSuccessCount |  GAUGE  |  Event写入成功数量  | 
 | SINK.k1.StartTime  |  GAUGE  |  Sink启动时间  | 
 | SINK.k1.StopTime  |  GAUGE  |  Sink停止时间  | 
-
+| -----| ------| ------|
 ## 建议设置监控告警项
 
 不同应用根据其特点，可以灵活调整触发条件及触发阈值
