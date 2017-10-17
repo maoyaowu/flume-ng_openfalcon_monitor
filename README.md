@@ -9,7 +9,7 @@ flume openfalcon monitor是一个基于flume-ng 监控的自定义监控插件�
 
 ## 环境需求
 
-Linux
+Linux，Windows
 
 JDK>=1.7
 
