@@ -3,7 +3,7 @@ flume openfalcon monitor是一个基于flume-ng 监控的自定义监控插件�
 
 ## 主要功能
 
-通过flume-ng内置的jmx监控，采集flume-ng进程的统计信息，包括$$$$$$等信息。
+通过flume-ng内置的jmx监控，采集flume-ng进程的统计信息。
 
 对应用程序代码无侵入，几乎不占用系统资源。
 
@@ -54,7 +54,7 @@ Flume-ng>=1.7(该监控组件仅在flume-ng1.7 测试过)
 | SOURCE.r1.AppendReceivedCount |  GAUGE  |  Event接收数量  | 
 | SOURCE.r1.AppendBatchAcceptedCount |  GAUGE  |  Event批量收到数量  | 
 | SOURCE.r1.AppendBatchReceivedCount  |  GAUGE  |  Event批量接收数量  | 
-|  |  |  | 
+| -----| ------| ------|
 | CHANNEL.c1.ChannelSize  |  GAUGE  | 通道大小  | 
 | CHANNEL.c1.ChannelCapacity |  GAUGE  | 通道容量  | 
 | CHANNEL.c1.ChannelFillPercentage |  GAUGE  | 通道占用百分比  | 
@@ -64,7 +64,7 @@ Flume-ng>=1.7(该监控组件仅在flume-ng1.7 测试过)
 | CHANNEL.c1.EventTakeAttemptCount   |  GAUGE  |  Event尝试取出数量  | 
 | CHANNEL.c1.StartTime  |  GAUGE  |  通道启动时间  | 
 | CHANNEL.c1.StopTime   |  GAUGE  |  通道停止时间  | 
-|  |  |  | 
+| -----| ------| ------|
 | SINK.k1.BatchCompleteCount |  GAUGE  |  Event批处理完成数量  | 
 | SINK.k1.BatchEmptyCount |  GAUGE  |  Event批处理为空数量  | 
 | SINK.k1.BatchUnderflowCount |  GAUGE  |  Event批处理下溢数量  | 
@@ -75,7 +75,7 @@ Flume-ng>=1.7(该监控组件仅在flume-ng1.7 测试过)
 | SINK.k1.EventDrainSuccessCount |  GAUGE  |  Event写入成功数量  | 
 | SINK.k1.StartTime  |  GAUGE  |  Sink启动时间  | 
 | SINK.k1.StopTime  |  GAUGE  |  Sink停止时间  | 
-| -----| ------| ------|
+
 ## 建议设置监控告警项
 
 不同应用根据其特点，可以灵活调整触发条件及触发阈值
