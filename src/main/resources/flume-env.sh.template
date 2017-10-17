@@ -1,0 +1,1 @@
+JAVA_OPTS="-Dflume.monitoring.type=cn.ll.flume.openfalcon.OpenFalconServer -Dflume.monitoring.hostname=myflume -Dflume.monitoring.urls=http://localhost:1988/v1/push,http://10.254.253.210:1988/v1/push -Dflume.monitoring.tags=app=flowfilter -Dflume.monitoring.pollFrequency=60
