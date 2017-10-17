@@ -21,7 +21,7 @@ Flume-ng>=1.7(该监控组件仅在flume-ng1.7 测试过)
 
 ## flume openfalcon monitor部署
 
-1. 在flume-ng根目录下建立plugins.d/flume-openfalcon/lib,plugins.d/flume-openfalcon/libext目录，将flume-openfalcon-monitor-0.0.1.jar拷贝到plugins.d/flume-openfalcon/lib下，将其他项目用到的jar文件拷贝到plugins.d/flume-openfalcon/libext下
+1. 在flume-ng根目录下建立plugins.d/flume-openfalcon/lib,plugins.d/flume-openfalcon/libext目录，将flume-openfalcon-monitor-0.0.1.jar拷贝到plugins.d/flume-openfalcon/lib下，将依赖的jar文件拷贝到plugins.d/flume-openfalcon/libext下
 2. 编辑flume-ng的环境变量配置文件$flume-ng_home/conf/flume-env.sh,在$JAVA_OPTS变量中加入flume openfalcon monitor环境变量配置。
 3. 正常启动flume-ng。	
 
