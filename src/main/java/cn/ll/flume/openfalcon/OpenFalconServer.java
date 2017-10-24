@@ -204,7 +204,8 @@ public class OpenFalconServer implements MonitorService {
 							item = new FalconItem();
 							item.setCounterType(CounterType.GAUGE.toString());
 							item.setEndpoint(hostname);
-							item.setMetric(StringUtils.lowerCase(component + Constants.metricSeparator + attribute));
+							//item.setMetric(StringUtils.lowerCase(component + Constants.metricSeparator + attribute));
+							item.setMetric(component + Constants.metricSeparator + attribute);
 							item.setStep(pollFrequency);
 							item.setTags(tags);
 							item.setTimestamp(System.currentTimeMillis() / 1000);
